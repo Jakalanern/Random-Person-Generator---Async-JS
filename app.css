@@ -1,0 +1,70 @@
+:root {
+  --clr-black: rgba(0, 0, 0, 0.815);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 247, 247);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+  height: 100%;
+  padding: 4em;
+  background: rgb(241, 241, 241);
+}
+
+.person-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.5em;
+  transform: scale(2);
+  padding: 1em;
+}
+
+.person-box img {
+  width: max-content;
+  border-radius: 50%;
+}
+
+/* Grouping */
+.name-and-age {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+/* Grouping */
+.state-and-phone {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+button {
+  margin-top: 5em;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+}
